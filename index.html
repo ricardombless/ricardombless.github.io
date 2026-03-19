@@ -1,0 +1,58 @@
+/* 整体面板样式 */
+.control-panel {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial;
+}
+
+/* 状态显示样式 */
+.status {
+  margin: 20px 0;
+  padding: 10px;
+  background: #e8f4f8;
+  border-radius: 5px;
+  color: #2d3748;
+}
+
+/* 按钮组样式 */
+.btn-group {
+  margin: 10px 0;
+}
+
+/* 按钮样式 */
+button {
+  padding: 15px 25px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 8px;
+  background: #4299e1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* 按钮悬浮/点击效果 */
+button:hover {
+  background: #3182ce;
+}
+button:active {
+  background: #2b6cb0;
+}
+
+/* 适配手机端：缩小面板宽度，按钮更紧凑 */
+@media (max-width: 400px) {
+  .control-panel {
+    width: 90%;
+    padding: 15px;
+  }
+  button {
+    padding: 12px 20px;
+    margin: 0 3px;
+    font-size: 14px;
+  }
+}
